@@ -7,12 +7,20 @@ function App() {
 
   // let count = 0 giving error because useState already initiallized count to 0
   const countUp = () => {
-    count += 1
-    // console.log('countUp', count)
-    setCount(count) //setCount(count+1)
+    if(count<20){
+      count += 1
+      // console.log('countUp', count)
+      setCount(count) //setCount(count+1)
+    }
+    else {
+      alert('Count cannot be greater than 20')
+    }
   }
   const countDown = () => {
-    setCount(count - 1)
+    if(count>0)
+      setCount(count - 1)
+    else 
+      alert('Count cannot be less than 0')
   }
   return (
     <>
