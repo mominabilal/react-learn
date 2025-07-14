@@ -1,0 +1,27 @@
+.item{
+    width:500px;
+    color:#353935;
+    font-size:20px;
+    margin: 0 auto;
+}
+.itemname{
+    font-weight: bold;
+    padding:20px;
+}
+.line{
+    border: 1px solid #f4f4f4;
+}
+.itemdelete{
+    float:right;
+    padding:12px 20px;
+    border:none;
+    background-color: cornflowerblue;
+    color: white;
+    margin-top:-5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+    color: rgba(2, 155, 2, 0.726);
+}
